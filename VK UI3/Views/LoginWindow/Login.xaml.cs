@@ -278,8 +278,7 @@ namespace VK_UI3.Views.LoginWindow
             this.Frame.Navigate(typeof(MainView));
         }
 
-        private void LoginTextBox_KeyDown(object sender, KeyRoutedEventArgs e)
-        {
+        private void LoginTextBox_KeyDown(object sender, KeyRoutedEventArgs e)        {
             if (e.Key == Windows.System.VirtualKey.Enter)
             {
                 Task task = new Task(() =>
@@ -290,6 +289,16 @@ namespace VK_UI3.Views.LoginWindow
                 task.RunSynchronously();
                 Frame.Navigate(typeof(waitPage), this, new DrillInNavigationTransitionInfo());
             }
+        }
+
+        private void QrLoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(QrLogin), null, new DrillInNavigationTransitionInfo());
+        }
+
+        private void TokenLoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(TokenLogin), null, new DrillInNavigationTransitionInfo());
         }
 
         public void SendArgs(ArgSender argSender)

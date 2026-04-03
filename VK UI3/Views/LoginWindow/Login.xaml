@@ -78,6 +78,27 @@
 					Click="BackButton"
 					Content="Отмена"
 					AutomationProperties.Name="Кнопка отмены" />
+
+				<TextBlock
+					Margin="0,16,0,4"
+					Opacity="0.5"
+					TextAlignment="Center"
+					Text="Другие способы входа" />
+
+				<Button
+					Margin="0,0,0,0"
+					HorizontalAlignment="Stretch"
+					Click="QrLoginButton_Click"
+					Content="Войти по QR коду"
+					AutomationProperties.Name="Войти по QR коду" />
+
+				<Button
+					Margin="0,8,0,0"
+					HorizontalAlignment="Stretch"
+					Click="TokenLoginButton_Click"
+					Content="Войти по токену"
+					AutomationProperties.Name="Войти по токену" />
+
 				<TextBlock Margin="0,20,0,0" TextAlignment="Center">
 					<Hyperlink NavigateUri="https://t.me/VK_M_creator">Music M в telegram</Hyperlink>
 				</TextBlock>

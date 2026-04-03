@@ -163,6 +163,7 @@
         <PackageReference Include="System.Drawing.Common" Version="9.0.6" />
         <PackageReference Include="TagLibSharp" Version="2.3.0" />
         <PackageReference Include="WinUICommunity.Components" Version="6.9.0" />
+        <PackageReference Include="QRCoder" Version="1.7.0" />
         <Manifest Include="$(ApplicationManifest)" />
     </ItemGroup>
 
